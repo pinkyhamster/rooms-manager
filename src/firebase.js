@@ -1,8 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'; // Hàm để khởi tạo ứng dụng Firebase.
-import { getFirestore } from '@firebase/firestore'; //Hàm để lấy tham chiếu tới ứng dụng Firebase.
+import { getFirestore } from '@firebase/firestore'; // Hàm để lấy tham chiếu tới ứng dụng Firebase.
 
-import { child, ref, set, get, onValue, getDatabase } from 'firebase/database'; //Các hàm như child, ref, set, get, onValue, và getDatabase để thao tác với Realtime Database.
+import { child, ref, set, get, onValue, getDatabase } from 'firebase/database'; // Các hàm như child, ref, set, get, onValue, và getDatabase để thao tác với Realtime Database.
 import _ from 'lodash'; // thư viện giúp xử lý logic dễ dàng hơn
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -74,7 +74,7 @@ function checkSlotIsUsed(data, slot) {
   return false;
 }
 
-//Kiểm tra xem ID đã tồn tại hay chưa.
+// Kiểm tra xem ID đã tồn tại hay chưa.
 function checkIdIsExist(data, id) {
   const inforById = data.filter((item) => item.id === id);
   if (inforById.length > 1) {
@@ -102,7 +102,7 @@ const sortByDateAndTime = (data) => {
   return result;
 };
 
-const queuingRef = ref(database, '/queuing'); //Tham chiếu đến node 'queuing' trên database.
+const queuingRef = ref(database, '/queuing'); // Tham chiếu đến node 'queuing' trên database.
 
 // convert data queuing when esp8266 upload new data
 // Sự kiện onValue lắng nghe sự thay đổi trên node 'queuing' và thực hiện các xử lý khi có sự thay đổi.
