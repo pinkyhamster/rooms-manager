@@ -10,25 +10,17 @@ import _ from 'lodash'; // thư viện giúp xử lý logic dễ dàng hơn
 
 // Your web app's Firebase configuration
 // Cung cấp thông tin cấu hình Firebase (API key, authDomain, projectId, ...).
-const firebaseConfig = {
-  apiKey: 'AIzaSyCJTvovwVoa2tEXGNaXZxr21KtARITFLoc',
-  authDomain: 'packing-manager.firebaseapp.com',
-  projectId: 'packing-manager',
-  storageBucket: 'packing-manager.appspot.com',
-  messagingSenderId: '19041306689',
-  appId: '1:19041306689:web:4f881c75181d2d7a4a5ec0',
-};
 
-// const firebaseConfig = {
-//   apiKey: 'AIzaSyCbeF46ZMeCJFVKa4kgXuZWBtKCJNnvkzI',
-//   authDomain: 'parking-manager-c6eef.firebaseapp.com',
-//   databaseURL: 'https://parking-manager-c6eef-default-rtdb.firebaseio.com',
-//   projectId: 'parking-manager-c6eef',
-//   storageBucket: 'parking-manager-c6eef.appspot.com',
-//   messagingSenderId: '385892307229',
-//   appId: '1:385892307229:web:00690d9e642013a2c4d1f4',
-//   measurementId: 'G-4Q3SYW3TVW',
-// };
+const firebaseConfig = {
+  apiKey: 'AIzaSyCbeF46ZMeCJFVKa4kgXuZWBtKCJNnvkzI',
+  authDomain: 'parking-manager-c6eef.firebaseapp.com',
+  databaseURL: 'https://parking-manager-c6eef-default-rtdb.firebaseio.com',
+  projectId: 'parking-manager-c6eef',
+  storageBucket: 'parking-manager-c6eef.appspot.com',
+  messagingSenderId: '385892307229',
+  appId: '1:385892307229:web:00690d9e642013a2c4d1f4',
+  measurementId: 'G-4Q3SYW3TVW',
+};
 
 // Initialize Firebase
 // Khởi tạo Firebase sử dụng thông tin cấu hình.
